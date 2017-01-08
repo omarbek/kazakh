@@ -45,7 +45,7 @@ request.setAttribute("topic_id", topicId);
 
 %>
 
-<jsp:include page="trainingTwoF.jsp" />
+<jsp:include page="trainingThreeF.jsp" />
 				
 
   

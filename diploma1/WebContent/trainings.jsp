@@ -17,10 +17,10 @@
 					<a href="?navPage=trainingOne&topic_id=<%=qwerty %>&questionId=0">Тренировка 1</a>
 				</div>
 				<div class="col-sm-3 well" style="background-color:pink;">
-					<a href="?navPage=trainingTwo&topic_id=<%=qwerty %>">Тренировка 2</a>
+					<a href="?navPage=trainingTwo&topic_id=<%=qwerty %>&questionId=0">Тренировка 2</a>
 				</div>
 				<div class="col-sm-3 well" style="background-color:pink;">
-					<a href="?navPage=trainingThree&topic_id=<%=qwerty %>">Тренировка 3</a>
+					<a href="?navPage=trainingThree&topic_id=<%=qwerty%>&questionId=0">Тренировка 3</a>
 				</div>
 			</div>
 			<div class="row">
