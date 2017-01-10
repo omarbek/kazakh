@@ -102,6 +102,18 @@ String navPage = request.getParameter("navPage");
 					%>
 			<jsp:include page="trainingThree.jsp" />
 					<%			
+				}else if(navPage.equals("trainingFour")){
+					%>
+			<jsp:include page="trainingFour.jsp" />
+					<%			
+				}else if(navPage.equals("trainingFive")){
+					%>
+			<jsp:include page="trainingFive.jsp" />
+					<%			
+				}else if(navPage.equals("trainingSix")){
+					%>
+			<jsp:include page="trainingSix.jsp" />
+					<%			
 				}
 			}
 		}

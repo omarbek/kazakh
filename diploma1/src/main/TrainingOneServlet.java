@@ -34,7 +34,7 @@ public class TrainingOneServlet extends HttpServlet {
 		String task_type = request.getParameter("task_type");
 		String questionId = request.getParameter("questionId");
 		String correctAns = request.getParameter("correctAns");
-		if (page.equals("trainingThreeForm")) {
+		if (page != null && page.equals("trainingThreeForm")) {
 			correctAns = request.getParameter("demo");
 		}
 		int j = Integer.parseInt(questionId);
@@ -53,11 +53,23 @@ public class TrainingOneServlet extends HttpServlet {
 					PreparedStatement prepStmt2 = con.prepareStatement(sql2);
 					prepStmt2.executeUpdate();
 				}
-				if (page.equals("trainingTwoForm")) {
-					response.sendRedirect("index.jsp?navPage=trainingTwo&topic_id=" + topicID + "&questionId=" + (++j));
-				} else if (page.equals("trainingThreeForm")) {
-					response.sendRedirect(
-							"index.jsp?navPage=trainingThree&topic_id=" + topicID + "&questionId=" + (++j));
+				if (page != null) {
+					if (page.equals("trainingTwoForm")) {
+						response.sendRedirect(
+								"index.jsp?navPage=trainingTwo&topic_id=" + topicID + "&questionId=" + (++j));
+					} else if (page.equals("trainingThreeForm")) {
+						response.sendRedirect(
+								"index.jsp?navPage=trainingThree&topic_id=" + topicID + "&questionId=" + (++j));
+					} else if (page.equals("trainingFourForm")) {
+						response.sendRedirect(
+								"index.jsp?navPage=trainingFour&topic_id=" + topicID + "&questionId=" + (++j));
+					} else if (page.equals("trainingFiveForm")) {
+						response.sendRedirect(
+								"index.jsp?navPage=trainingFive&topic_id=" + topicID + "&questionId=" + (++j));
+					} else if (page.equals("trainingSixForm")) {
+						response.sendRedirect(
+								"index.jsp?navPage=trainingSix&topic_id=" + topicID + "&questionId=" + (++j));
+					}
 				} else {
 					response.sendRedirect("index.jsp?navPage=trainingOne&topic_id=" + topicID + "&questionId=" + (++j));
 				}
@@ -67,7 +79,6 @@ public class TrainingOneServlet extends HttpServlet {
 		} catch (
 
 		SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
