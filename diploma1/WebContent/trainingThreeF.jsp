@@ -82,9 +82,9 @@ int j = Integer.parseInt(questionId);
 			}
 		 for(int i=0;i<word.length();i++){
 		 %>
-		 <button id=<% out.print(i); %> onclick="myFunction(this.id,'<% out.print(word.charAt(i)); %>')" class="btn btn-success btn-block" <%=clearWidth %>>
+		 	<button id=<% out.print(i); %> onclick="myFunction(this.id,'<% out.print(word.charAt(i)); %>')" class="btn btn-success btn-block" <%=clearWidth %>>
 			<% out.print(word.charAt(i)); %></button>
-         <%
+		 <%
 			}
 		 %>
 	 <br>

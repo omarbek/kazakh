@@ -25,13 +25,13 @@
 			</div>
 			<div class="row">
   				<div class="col-sm-3 well" style="background-color:pink;">
-					<a href="?navPage=trainingFour&topic_id=<%=qwerty %>">Тренировка 4</a>
+					<a href="?navPage=trainingFour&topic_id=<%=qwerty %>&questionId=0">Тренировка 4</a>
 				</div>
 				<div class="col-sm-3 well" style="background-color:pink;">
-					<a href="?navPage=trainingFive&topic_id=<%=qwerty %>">Тренировка 5</a>
+					<a href="?navPage=trainingFive&topic_id=<%=qwerty %>&questionId=0"">Тренировка 5</a>
 				</div>
 				<div class="col-sm-3 well" style="background-color:pink;">
-					<a href="?navPage=trainingSix&topic_id=<%=qwerty %>">Тренировка 6</a>
+					<a href="?navPage=trainingSix&topic_id=<%=qwerty %>&questionId=0"">Тренировка 6</a>
 				</div>
 			</div>
 		</div>
