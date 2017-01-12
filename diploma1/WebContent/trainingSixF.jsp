@@ -9,7 +9,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-String topicId = null;
+String topicId = null;//
 topicId = (String)request.getAttribute("topic_id");
 String questionId = null;
 questionId = (request.getAttribute("questionId")).toString();
